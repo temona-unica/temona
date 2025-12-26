@@ -1,0 +1,15 @@
+:root { --max: 980px; }
+* { box-sizing: border-box; }
+body { margin: 0; font-family: system-ui, Arial, sans-serif; line-height: 1.55; }
+header { border-bottom: 1px solid #ddd; }
+nav { max-width: var(--max); margin: 0 auto; padding: 14px 16px; display: flex; gap: 14px; flex-wrap: wrap; }
+nav a { text-decoration: none; color: #111; padding: 6px 10px; border-radius: 8px; }
+nav a:hover { background: #f2f2f2; }
+main { max-width: var(--max); margin: 0 auto; padding: 22px 16px 60px; }
+h1, h2 { line-height: 1.2; }
+.card { border: 1px solid #e6e6e6; border-radius: 14px; padding: 14px 16px; margin: 12px 0; }
+.grid { display: grid; gap: 12px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
+.small { color: #555; font-size: 0.95rem; }
+footer { border-top: 1px solid #ddd; }
+footer .wrap { max-width: var(--max); margin: 0 auto; padding: 14px 16px; color: #666; font-size: 0.9rem; }
+

@@ -1,5 +1,63 @@
 <!doctype html>
-<html>
-  <head><meta charset="utf-8"><title>Lab</title></head>
-  <body><h1>Hello from my lab site</h1></body>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>My Research Group</title>
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+<header>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="research.html">Research</a>
+    <a href="people.html">People</a>
+    <a href="publications.html">Publications</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<main>
+  <h1>My Research Group</h1>
+  <p class="small">Department • University • City, Country</p>
+
+  <div class="card">
+    <h2>What we do</h2>
+    <p>
+      One short paragraph describing your group’s mission and methods (2–4 lines).
+      Mention your main themes, tools, and collaborations.
+    </p>
+  </div>
+
+  <div class="grid">
+    <div class="card">
+      <h2>Research highlights</h2>
+      <ul>
+        <li>Theme 1 (one line)</li>
+        <li>Theme 2 (one line)</li>
+        <li>Theme 3 (one line)</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h2>News</h2>
+      <ul>
+        <li>2025-12 — Paper accepted in …</li>
+        <li>2025-11 — Talk at …</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h2>Open positions</h2>
+      <p>PhD / Postdoc / Thesis topics. Add a short note and contact.</p>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">© <span id="y"></span> My Research Group</div>
+</footer>
+
+<script>
+  document.getElementById("y").textContent = new Date().getFullYear();
+</script>
+</body>
 </html>
