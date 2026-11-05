@@ -111,6 +111,14 @@ h1, h2 { line-height: 1.2; }
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); 
 }
 
+/* Fixed two-column grid (2x2 layouts), one column on narrow screens */
+.grid.grid-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+@media (max-width: 720px) {
+  .grid.grid-2 { grid-template-columns: 1fr; }
+}
+
 .small { 
   color: #555; 
   font-size: 0.95rem; 

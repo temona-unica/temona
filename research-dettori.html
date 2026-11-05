@@ -46,8 +46,70 @@
   </div>
 
   <div class="card">
-    <h2>Projects</h2>
-    <p class="small">Coming soon.</p>
+    <h2>Overview</h2>
+    <p>
+      This research line uses atomistic simulations, from density functional theory to machine-learned interatomic potentials, to understand how vibrational energy is stored, transported, and dissipated in materials.
+      Four themes are currently active: phonon dynamics out of equilibrium, thermal and thermoelectric transport, coating materials for the Einstein Telescope, and accelerated simulation methods that support the other three.
+    </p>
+  </div>
+
+  <div class="grid grid-2">
+    <div class="card">
+      <h2>Phonon dynamics out of equilibrium</h2>
+      <p>
+        When a material is driven out of equilibrium, for instance by an ultrafast laser pulse, the excess energy is first deposited in a few vibrational modes and then spreads to the others through anharmonic coupling.
+        We study the channels and timescales of this redistribution and how they depend on structure, dimensionality, and temperature.
+        Molecular dynamics with mode-resolved temperatures and energy fluxes, combined with anharmonic lattice dynamics, links the microscopic decay processes to the signals measured in time-resolved spectroscopy.
+        The systems studied range from bulk and nanostructured semiconductors to liquid water and ice, where we follow the relaxation of excited intramolecular vibrations through librational and hydrogen-bond modes.
+      </p>
+      <p class="small"><strong>Methods:</strong> non-equilibrium molecular dynamics, normal-mode projection, anharmonic lattice dynamics, phonon lifetimes.</p>
+      <p class="small"><strong>Related publications:</strong></p>
+      <ul class="small">
+        <li><a href="https://doi.org/10.1002/advs.202515470">Advanced Science 13(11), e15470 (2026)</a></li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Thermal and thermoelectric transport</h2>
+      <p>
+        We study heat and charge transport in materials with complex structure, including conductive metal-organic frameworks, layered transition-metal dichalcogenides, π-conjugated molecular crystals, and lead-free double perovskites.
+        Lattice thermal conductivity is computed from first-principles force constants through the Boltzmann transport equation and from molecular dynamics, with attention to higher-order anharmonicity and temperature effects.
+        Combined with electronic transport calculations, these results guide strategies such as doping, charge modulation, and nanostructuring to improve thermoelectric performance.
+        The work on two-dimensional MOFs is carried out together with <a href="research-melis.html">Prof. Claudio Melis</a>.
+      </p>
+      <p class="small"><strong>Methods:</strong> density functional theory, phonon Boltzmann transport equation, equilibrium and non-equilibrium molecular dynamics, electronic transport.</p>
+      <p class="small"><strong>Related publications:</strong></p>
+      <ul class="small">
+        <li><a href="https://doi.org/10.1021/acs.jpclett.6c01808">The Journal of Physical Chemistry Letters 17(30), 8624–8633 (2026)</a></li>
+        <li><a href="https://doi.org/10.1021/acs.jctc.6c00412">Journal of Chemical Theory and Computation 22(11), 5742–5751 (2026)</a></li>
+        <li><a href="https://doi.org/10.1103/729y-m77y">Physical Review Materials 10, 015403 (2026)</a></li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Coating materials for the Einstein Telescope</h2>
+      <p>
+        The Einstein Telescope, a planned third-generation gravitational-wave observatory, will need mirror coatings with very low thermal noise, which depends on the mechanical and vibrational properties of the oxide layers.
+        We study candidate coating oxides (GeO<sub>2</sub>, Ta<sub>2</sub>O<sub>5</sub>, TiO<sub>2</sub>, SiO<sub>2</sub>, HfO<sub>2</sub>) in several crystalline phases, computing their structural and vibrational properties from first principles.
+        In parallel, we assess how accurately machine-learned foundation potentials reproduce these properties, with the aim of reaching the system sizes needed to model the amorphous layers used in real mirrors.
+      </p>
+      <p class="small"><strong>Methods:</strong> density functional theory, lattice dynamics, machine-learned foundation potentials.</p>
+    </div>
+
+    <div class="card">
+      <h2>Accelerated and data-driven atomistic modeling</h2>
+      <p>
+        Machine-learned interatomic potentials and semi-empirical methods extend the length and time scales of atomistic simulations, provided their accuracy is checked against first-principles references.
+        We develop and validate ChIMES potentials for silicon and for point defects in Cs<sub>2</sub>NaYbCl<sub>6</sub>, where they speed up a defect workflow refined with DFT, and we work on Chebyshev polynomials for accelerated MD simulations.
+        We also benchmark universal potentials for phonons and thermal transport in layered dichalcogenides.
+        DFTB simulations extend the accessible system sizes further, and DFT calculations support experimental studies of photocatalytic heterostructures.
+      </p>
+      <p class="small"><strong>Methods:</strong> ChIMES and universal machine-learned potentials, Chebyshev polynomials for accelerated MD, density-functional tight binding (DFTB), density functional theory.</p>
+      <p class="small"><strong>Related publications:</strong></p>
+      <ul class="small">
+        <li><a href="https://doi.org/10.1038/s41699-026-00721-1">npj 2D Materials and Applications 10, 85 (2026)</a></li>
+      </ul>
+    </div>
   </div>
 
   <p><a href="research.html">&larr; Back to Research</a></p>
