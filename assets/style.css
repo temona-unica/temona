@@ -278,3 +278,36 @@ footer .wrap {
     padding-top: calc(28px + 75% * 281 / 380);
   }
 }
+
+/* =======================
+   PUBLIC ENGAGEMENT: activity rows (institution/period | description)
+   ======================= */
+.activity-list {
+  display: grid;
+  gap: 10px;
+  margin: 8px 0 18px 0;
+}
+.activity {
+  display: grid;
+  grid-template-columns: 230px 1fr;
+  gap: 16px;
+  padding: 12px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.6);
+}
+.activity p { margin: 0; }
+.activity-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.activity-setting { font-weight: 600; }
+.activity-period { color: #555; font-size: 0.95rem; }
+
+@media (max-width: 720px) {
+  .activity {
+    grid-template-columns: 1fr;
+    gap: 6px;
+    padding: 10px 6px;
+  }
+}
