@@ -311,3 +311,38 @@ footer .wrap {
     padding: 10px 6px;
   }
 }
+
+/* =======================
+   TEACHING: course blocks with degree badge
+   ======================= */
+.course-list {
+  display: grid;
+  gap: 10px;
+  margin-top: 6px;
+}
+.course {
+  padding: 12px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.6);
+}
+.course h3 { margin: 0 0 4px 0; }
+.course p { margin: 6px 0 0 0; }
+.course .course-meta { color: #555; font-size: 0.95rem; margin-top: 2px; }
+.badge {
+  display: inline-block;
+  margin-left: 8px;
+  padding: 2px 9px;
+  border-radius: 999px;
+  background: #e1ece3;
+  color: #1f4d2c;
+  font-size: 0.78rem;
+  font-weight: 600;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+/* Five nav links no longer fit one line on phones: wrap into centred rows */
+@media (max-width: 720px) {
+  nav { justify-content: center; row-gap: 0; }
+  .course { padding: 10px 6px; }
+}
