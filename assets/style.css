@@ -346,3 +346,50 @@ footer .wrap {
   nav { justify-content: center; row-gap: 0; }
   .course { padding: 10px 6px; }
 }
+
+/* =======================
+   RESEARCH PAGES: boxed subsections inside a project card
+   ======================= */
+.subgrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  margin: 10px 0;
+}
+.subbox {
+  padding: 12px 14px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.7);
+  border: 1px solid #e3ebe5;
+}
+.subbox.wide { grid-column: 1 / -1; }
+.subbox h3 { margin: 0 0 6px 0; font-size: 1.05rem; }
+.subbox p { margin: 0 0 8px 0; }
+.subbox ul { margin: 0 0 8px 0; padding-left: 1.2rem; }
+.subbox > :last-child { margin-bottom: 0; }
+
+/* =======================
+   PEOPLE: former thesis students, grouped by academic year
+   ======================= */
+.thesis-year { margin: 16px 0 6px 0; font-size: 1.05rem; }
+.thesis-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 8px;
+}
+.thesis-list li {
+  padding: 8px 12px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.6);
+}
+.thesis-name { font-weight: 600; }
+.thesis-degree { color: #555; font-size: 0.92rem; margin-left: 6px; }
+.thesis-title { display: block; margin-top: 2px; font-style: italic; }
+
+@media (max-width: 720px) {
+  .subgrid { grid-template-columns: 1fr; }
+  .subbox { padding: 10px; }
+  .thesis-degree { display: block; margin-left: 0; }
+}

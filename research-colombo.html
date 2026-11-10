@@ -44,67 +44,80 @@
   </div>
 
   <div class="card">
+    <h2>Overview</h2>
+    <p>Two research lines are currently active: non-stationary transport, which extends irreversible thermodynamics and molecular dynamics beyond the steady state, and coupled heat, mass, and charge transport in multicomponent and ionic fluids.</p>
+  </div>
+
+  <div class="card">
     <h2>Non-Stationary Transport</h2>
+    <div class="subgrid">
+      <div class="subbox wide">
+        <h3>General Framework</h3>
+        <p>Transport phenomena provide a unified description of the spatio-temporal evolution of conserved quantities such as heat, mass, and electric charge. Classical formulations, from the Fourier, Fick, and Ohm laws to Onsager’s theory of irreversible thermodynamics and the Green–Kubo relations, rest on the assumptions of stationary states and infinitesimal deviations from equilibrium.</p>
+        <p>These assumptions become inadequate in systems where temperature, concentration, or electric potential gradients are intrinsically time-dependent and evolve on timescales comparable to, or shorter than, microscopic relaxation times. In such regimes, memory effects, delayed responses, nonlinear behavior, and the breakdown of local equilibrium emerge. The study of non-stationary transport is therefore relevant both to the foundations of nonequilibrium thermodynamics and to applications in nanoelectronics, thermoelectrics, microfluidics, and advanced materials.</p>
+      </div>
+      <div class="subbox">
+        <h3>Theoretical Framework</h3>
+        <p>The project adopts irreversible thermodynamics in both its classical and extended formulations. Classical Irreversible Thermodynamics (CIT) is based on the local equilibrium hypothesis and on linear force–flux relations. It describes coupled transport and entropy production near equilibrium: transport coefficients are instantaneous, fluxes respond locally to their conjugate forces, and the evolution equations are parabolic.</p>
+        <p>Since the time-dependent regimes addressed here lie at or beyond the limits of validity of CIT, Extended Irreversible Thermodynamics (EIT) plays a central role. EIT treats fluxes as independent state variables and extends the entropy functional accordingly. In this way it incorporates finite relaxation times, temporal nonlocality, and hyperbolic transport, and provides a consistent thermodynamic description of memory effects, finite propagation speeds, and frequency-dependent transport coefficients. The two frameworks will be systematically compared in order to identify their domains of validity and to clarify the thermodynamic meaning of non-stationary transport coefficients, entropy production, and dissipation under time-dependent driving.</p>
+      </div>
+      <div class="subbox">
+        <h3>Computational Methodology</h3>
+        <p>The microscopic foundations of non-stationary transport will be investigated through large-scale nonequilibrium molecular dynamics simulations, which resolve microscopic timescales, correlation functions, and relaxation processes. Time-dependent thermal, chemical, or electrostatic gradients will be imposed to probe the system response beyond the steady state. From the atomic trajectories, time-resolved fluxes, correlation functions, and spectral transport coefficients will be extracted, giving access to memory kernels and frequency-dependent responses.</p>
+        <p>This approach links macroscopic constitutive laws to microscopic dynamics. It also assesses possible inertial effects and discriminates between ballistic, diffusive, and propagative regimes. Combined with CIT and EIT, it aims at a coherent multiscale description of non-stationary transport, grounded in first principles and applicable to complex material systems.</p>
+      </div>
+      <div class="subbox wide">
+        <h3>Research Goals</h3>
+        <p>The project aims at a rigorous characterization of transport under time-dependent forcing, with gradients evolving on timescales comparable to microscopic relaxation. It also seeks quantitative criteria establishing when the steady-state and near-equilibrium paradigms remain valid and when explicitly dynamical constitutive descriptions are required. Specifically:</p>
+        <ul>
+          <li>To map, in a systematically parameterized manner, the breakdown of Fourier-, Fick-, and Ohm-type laws for heat, mass, and charge transport. The breakdown will be quantified in terms of characteristic times, lengths, and forcing spectra, and the dimensionless control parameters governing the onset of memory, delay, and nonlinearity will be identified.</li>
+          <li>To formulate and validate generalized transport relations consistent with irreversible thermodynamics beyond the instantaneous-response limit. These relations will be expressed through memory kernels and frequency-dependent transport coefficients, allowing a unified treatment of different conserved quantities and material classes.</li>
+          <li>To connect these macroscopic descriptors to their microscopic origins through nonequilibrium molecular dynamics under prescribed time-dependent gradients. This involves identifying relaxation mechanisms, reconstructing effective memory kernels, and discriminating between diffusive (parabolic) and propagative (hyperbolic) regimes. Particular attention will be given to finite signal propagation, inertial effects, and the parameters controlling the transition between regimes.</li>
+          <li>To extend the thermodynamic analysis of dissipation to time-dependent driving, focusing on entropy balance and entropy production in the spectral domain. Under periodic and stochastic forcing, the project will clarify how phase lags, resonance-like features, and apparent reversibility affect dissipation, stability, and the efficiency of coupled transport processes.</li>
+          <li>The final objective is a consistent framework for non-stationary transport. This framework will classify response regimes (stationary, quasi-stationary, strongly dynamical), provide operational validity criteria for constitutive laws, and translate these criteria into guidance for applications in advanced electronics, energy conversion, and complex materials.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
 
-    <h3>General Framework</h3>
-    <p>
-      Transport phenomena represent one of the foundational pillars of both theoretical and applied materials physics, providing a unifying language for describing the spatio-temporal evolution of conserved quantities such as heat, mass, and electric charge.
-      Classical formulations, ranging from the phenomenological Fourier, Fick, and Ohm laws to Onsager theory of irreversible thermodynamics and the Green–Kubo relations, have delivered a remarkably successful framework, yet one fundamentally rooted in the assumptions of stationary states and infinitesimal deviations from equilibrium.
-    </p>
-    <p>
-      These assumptions become increasingly inadequate when addressing real and technologically relevant systems, in which temperature, concentration, or electric potential gradients are intrinsically time-dependent and evolve on timescales comparable to, or shorter than, microscopic relaxation times.
-      In such regimes, memory effects, delayed responses, nonlinear behavior, and breakdowns of the local equilibrium paradigm naturally emerge.
-    </p>
-    <p>
-      The investigation of non-stationary transport processes is therefore of central importance, both for advancing the theoretical foundations of nonequilibrium thermodynamics and for addressing practical challenges in fields ranging from nanoelectronics and thermoelectrics to microfluidics and advanced materials.
-    </p>
-
-    <h3>Theoretical Framework: Irreversible Thermodynamics</h3>
-    <p>
-      Irreversible thermodynamics is the underlying theory here adopted, employed in both its classical and extended formulations.
-      Classical Irreversible Thermodynamics (CIT), grounded in the local equilibrium hypothesis and in linear relations between thermodynamic forces and fluxes, provides the natural starting point for the description of coupled transport phenomena and entropy production in near-equilibrium regimes.
-      Within this framework, transport coefficients are instantaneous, fluxes respond locally to their conjugate forces, and the evolution equations are typically parabolic in nature.
-    </p>
-    <p>
-      However, the explicitly time-dependent regimes addressed in this project lie at, or even fall beyond, the boundaries of validity of the classical approach.
-      For this reason, Extended Irreversible Thermodynamics (EIT) plays a central role in this research effort.
-      By promoting fluxes to the status of independent state variables and extending the entropy functional accordingly, EIT naturally incorporates finite relaxation times, nonlocality in time, and wave-like (hyperbolic) transport behavior.
-      This framework enables a consistent thermodynamic description of memory effects, finite propagation speeds, and frequency-dependent transport coefficients, all of which are essential for capturing the physics of strongly dynamical transport processes.
-    </p>
-    <p>
-      The project exploits this dual theoretical perspective to systematically compare classical and extended descriptions, identify their respective domains of validity, and clarify the thermodynamic meaning of non-stationary transport coefficients, entropy production, and dissipation under time-dependent driving.
-    </p>
-
-    <h3>Computational Methodology: Molecular Dynamics</h3>
-    <p>
-      The microscopic foundations of non-stationary transport will be investigated through large-scale nonequilibrium molecular dynamics simulations, which provide direct access to particle-level dynamics, enabling the explicit resolution of microscopic timescales, correlation functions, and relaxation processes that underpin macroscopic transport behavior.
-    </p>
-    <p>
-      Time-dependent thermal, chemical, or electrostatic external gradients will be imposed, allowing the system response to be probed beyond the steady-state regime.
-      From the resulting atomic trajectories, time-resolved fluxes, correlation functions, and spectral transport coefficients will be extracted, offering a direct route to quantifying memory kernels and frequency-dependent responses.
-    </p>
-    <p>
-      This approach bridges macroscopic (thermodynamic) constitutive laws with microscopic dynamics, assessing the emergence of possible inertial effects and discriminating between ballistic, diffusive, or propagative transport regimes.
-    </p>
-    <p>
-      By combining molecular dynamics with the thermodynamic frameworks of CIT and EIT, the project aims to establish a coherent multiscale description of non-stationary transport, grounded in first principles and directly applicable to complex material systems.
-    </p>
-
-    <h3>Research Goals</h3>
-    <p>
-      Building on the above theoretical and computational framework, the project aims at a rigorous characterization of transport under genuinely time-dependent forcing, where externally imposed gradients evolve on timescales comparable to intrinsic microscopic relaxation.
-      The overarching objective is to establish quantitative criteria delineating when the steady-state and near-equilibrium paradigms remain valid, and when they must be replaced by explicitly dynamical constitutive descriptions.
-    </p>
-    <p>More specifically:</p>
-    <ul>
-      <li>A first goal is to map, in a controlled and systematically parameterized manner, the breakdown of standard constitutive relations for heat, mass, and charge transport, specifically the regimes in which Fourier-, Fick-, and Ohm-type laws no longer provide an accurate representation of fluxes. Rather than treating this failure as a qualitative departure, the project will quantify it in terms of characteristic times, lengths, and forcing spectra, thereby identifying the relevant dimensionless control parameters governing the onset of memory, delay, and nonlinearity.</li>
-      <li>On this basis, a second goal is to formulate and validate generalized transport relations consistent with irreversible thermodynamics beyond the instantaneous-response limit. These relations will be expressed through memory kernels and frequency-dependent transport coefficients, providing a compact representation of temporal nonlocality and enabling a unified treatment of dynamical transport across different conserved quantities and material classes.</li>
-      <li>A third goal is to connect these macroscopic descriptors to their microscopic origins using nonequilibrium molecular dynamics. The simulation campaign will be designed to extract time-resolved fluxes and correlation functions under prescribed time-dependent gradients, enabling the identification of relaxation mechanisms, the reconstruction of effective memory kernels, and the discrimination between diffusive (parabolic) and propagative (hyperbolic) regimes. Particular emphasis will be placed on the emergence of finite signal propagation and inertial effects, and on the parameters controlling the transition between these regimes.</li>
-      <li>A further goal is to extend the thermodynamic analysis of dissipation to explicitly time-dependent driving, with a focus on entropy balance and entropy production in the spectral domain. By examining the response under periodic and stochastic forcing, the project will clarify how phase lags, resonance-like features, and apparent reversibility affect dissipation, stability, and the efficiency of coupled transport processes.</li>
-    </ul>
-    <p>
-      Ultimately, the project seeks to articulate a coherent and internally consistent framework for non-stationary transport, capable of classifying response regimes (stationary, quasi-stationary, strongly dynamical), providing operational validity criteria for constitutive laws, and translating these criteria into guidance for applications in advanced electronics, energy conversion technologies, and complex materials.
-    </p>
+  <div class="card">
+    <h2>Coupled Transport Phenomena</h2>
+    <div class="subgrid">
+      <div class="subbox wide">
+        <h3>General Framework</h3>
+        <p>In multicomponent fluids, and in ionic fluids in particular, heat conduction, mass diffusion, and electrical transport are not independent processes. Temperature gradients can induce mass and charge fluxes, and concentration or electrostatic potential gradients can generate heat currents. These are the Soret, Dufour, Seebeck, and Peltier effects, and they coexist with the direct Fourier, Fick, and Ohm regimes. The cross-effects are small and difficult to isolate experimentally. Their computational estimate through Green–Kubo or nonequilibrium molecular dynamics approaches also requires long simulation times. A consistent and efficient description of coupled transport is relevant to electrochemistry, ionic thermoelectrics, microfluidics, heat-transfer fluids, and energy materials.</p>
+      </div>
+      <div class="subbox">
+        <h3>Theoretical Framework: Linear Non-Equilibrium Thermodynamics</h3>
+        <p>The starting point is the Onsager formulation of non-equilibrium thermodynamics, together with the microscopic definitions of heat, mass, and charge currents. Combining the phenomenological relations with the conservation laws yields evolution equations for the temperature and density profiles. This goes beyond the standard expression of steady-state fluxes. A central concept is the <em>generalized diffusivity</em>. Its introduction allows the coupled equations to be formally decoupled, so that the relaxation of initial step-like profiles can be expressed analytically as a sum of exponential terms. The approach has been developed for each pair of coupled mechanisms:</p>
+        <ul>
+          <li><strong>Heat–mass coupling:</strong> the generalized thermal diffusivity includes the effect of mass flow on thermal transport. It is therefore the quantity accessible to experiment whenever coupling is present.</li>
+          <li><strong>Heat–charge coupling:</strong> the generalized thermal diffusivity adds to the ordinary thermal diffusivity a term set by the electrical conductivities and the Peltier coefficient.</li>
+          <li><strong>Mass–charge coupling:</strong> the dynamics is governed by a generalized diffusivity and an effective frictional term of electrostatic origin, which vanishes for uncharged species.</li>
+        </ul>
+      </div>
+      <div class="subbox">
+        <h3>Computational Methodology</h3>
+        <p>The theory is validated through approach-to-equilibrium molecular dynamics (AEMD), a method developed for thermal conductivity in solids and here generalized to coupled transport in fluids. The system relaxes freely from an imposed step-like profile, and fitting its transient evolution to the analytical solutions yields the generalized coefficients without requiring a steady state. Benchmark systems include binary Lennard–Jones liquid mixtures and aqueous NaCl solutions.</p>
+      </div>
+      <div class="subbox wide">
+        <h3>Main Results</h3>
+        <ul>
+          <li><strong>Lennard–Jones mixtures, heat–mass coupling:</strong> AEMD reproduces Soret coefficients obtained by nonequilibrium techniques and provides the first quantitative estimate of the generalized thermal diffusivity. No rectification effect was observed. <a href="https://doi.org/10.1002/adts.202300849">Advanced Theory and Simulations 7(4), 2300849 (2024)</a></li>
+          <li><strong>NaCl solutions, heat–charge coupling:</strong> concurrent and discordant thermal/electrostatic gradients are non-equivalent and give rise to a rectification behavior. The behavior is traced to Soret-like thermal transport and to the alteration of the water microstructure. <a href="https://doi.org/10.1063/5.0201444">Applied Physics Letters 124(12), 122203 (2024)</a></li>
+          <li><strong>Charged binary mixtures, mass–charge coupling:</strong> the electrostatic frictional term is non-zero, and both generalized coefficients depend significantly on density and temperature. <a href="https://doi.org/10.1002/adts.202401371">Advanced Theory and Simulations 8(6), 2401371 (2025)</a></li>
+        </ul>
+      </div>
+      <div class="subbox wide">
+        <h3>Perspectives</h3>
+        <p>The main ongoing effort is to develop a unified dynamical description in which heat, mass, and charge transport are treated simultaneously in multicomponent ionic mixtures. In this description:</p>
+        <ul>
+          <li>Fourier, Fick, and Ohm laws emerge as limiting cases of a single thermodynamic structure, and all cross-effects are encoded in a single dynamical matrix.</li>
+          <li>The electrostatic contribution is expected to separate a fast Debye-type relaxation mode from a set of slower diffusive electroneutral modes. This separation would provide a formal basis for the quasi-electroneutral approximation and identify its limits.</li>
+        </ul>
+        <p>Further work will apply this framework, through AEMD, to realistic electrolytes and ionic liquids. It will also assess the validity of the linear, mean-field description at small length scales, where it connects with the extended formulations adopted for non-stationary transport. Finally, it will examine how compositional asymmetries can be used to tune transport responses in materials for energy conversion and thermal management.</p>
+      </div>
+    </div>
   </div>
 
   <p><a href="research.html">&larr; Back to Research</a></p>
